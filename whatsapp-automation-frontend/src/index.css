@@ -1,0 +1,377 @@
+
+body {
+  
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed;
+}
+
+
+.form-container {
+  background-color: #f0f0f0; /* Light gray for contrast */
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.form-container h1 {
+  color: #128c7e; /* WhatsApp green */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-container h2 {
+  color: #075e54; /* Darker green */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-group button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #20b258; /* Darker green */
+}
+
+.numbers-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.numbers-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.numbers-list li button {
+  background-color: #ff5e57; /* Red for remove button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.numbers-list li button:hover {
+  background-color: #e14b4b; /* Darker red */
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  resize: none;
+}
+
+.schedule-group {
+  margin-bottom: 20px;
+}
+
+.schedule-group label {
+  font-size: 14px;
+  color: #333;
+}
+
+.schedule-group input {
+  margin-left: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.send-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #20b258; /* Darker green */
+}
+.personalize-container {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.personalize-container h3,
+.personalize-container h2 {
+  color: #128c7e; /* WhatsApp green */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.personalize-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.personalize-form input,
+.personalize-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.personalize-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.personalize-form input:focus,
+.personalize-form textarea:focus {
+  border-color: #128c7e;
+  outline: none;
+}
+
+.personalize-form button {
+  background-color: #25d366; /* WhatsApp light green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.personalize-form button:hover {
+  background-color: #20b258; /* Darker green */
+}
+
+.scheduled-messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scheduled-messages li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.scheduled-messages .message-details {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.scheduled-messages .delete-button {
+  background-color: #ff5e57; /* Red for delete */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scheduled-messages .delete-button:hover {
+  background-color: #e14b4b; /* Darker red */
+}
+.navbar {
+  background-color: #128c7e; /* WhatsApp green */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  position: sticky;
+  top: 3px;
+  
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-brand img{
+  height:35px;
+
+}
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar-links a:hover {
+  background-color: #25d366; /* WhatsApp light green */
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #128c7e;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-brand {
+    cursor: pointer;
+  }
+}
+.footer {
+  background-color: #128c7e; /* WhatsApp green */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-brand h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.footer-links a:hover {
+  background-color: #25d366; /* WhatsApp light green */
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #25d366; /* WhatsApp light green */
+}
+
+.footer-bottom {
+  background-color: #075e54; /* Darker green */
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
